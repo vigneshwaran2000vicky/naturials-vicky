@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naturil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" href="data:image/jpeg;base64,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">
+</head>
+<div class="first" >
+    <img src="naturials.svg" width="90px" style="margin-left: 20px;">
+    <div class="bottom">
+        
+            <p> our Servi</p>
+            <p>Body Care</p>
+            <p>Offers</p>
+            <p>Bridal</p>
+            <p>Franchise</p>
+            <p>About Us</p>
+            <p>Salon Locator</p>
+            <p>Pricing</p>
+            <p>Academy</p>
+            <p>Blog</p>
+    </div>
+</div>
+<div class="threefour">
+<div class="three">
+ <img src="Make_up_brush-1.webp"  class="bresh">
+<div class="three1">
+ <h4>Naturals In 2023</h4>
+<h1>Our Naturals<br>
+    Journey</h1>
+</div>
+</div>
+<div class="four1">
+    <div class="five1">
+<div class="four">
+    <h1>700<br> <span>stors</span></h1>
+    <h1>20<br><span>states</span></h1>
+    <h1>10,000<br><span>Professionals</span></h1>
+</div >
+<p class="text23">23 Years Of Pathbreaking Excellence In Beauty Services &<br> Entrepreneurship Opportunities!</p>
+</div>
+</div>
+<div class="five">
+    <p>NATURALLY, YOU!</p>
+    <h1>What Our Magicians Can</h1>
+    <h1 style="padding-left: 39%;">Do For You</h1>   
+</div>
+</div>
+<div class="six">
+    <img src="img1.webp" width="40%" style="margin-left: 10px;">
+   <div class="six2">
+       <p class="sixp1">EXCLUSIVELY BRIDAL</p>
+       <h1>Bespoke bridal looks</h1>
+       <p class="sixtext">for brides that cover all<br>
+        services.</p>
+        <button class="btone" >Know More</button>
+   </div>
+</div>
+<div class="seven">
+    <div class="seven1">
+        <p>SKIN CARE</p>
+        <h4> Naturals skincare services</h4>
+        <h2>  replenish, rejuvenate and<br> revitalise your skin</h2>
+        <button class="bttwo">Know More</button>
+    </div>
+    <img src="Jenelia-1-1.webp" width="35%">
+</div>
+<div class="eight">
+    <img src="hair.webp" width="42.5%" style="margin-left: 18px;">
+    <div class="eight1">
+        <p>HAIR CARE</p>
+        <h4>Hairstyling and cuts from</h4>
+        <h2>simple trims to a couture <br>look</h2>
+        <button class="bttwo" style="margin-top: 60px;">Know More</button>
+    </div>
+</div>
+<div class="nine">
+<div class="nine1">
+    <p>FRANCHISE</p>
+    <h1>Join The<br>
+        Naturals Family</h1>
+    <h4>Be A Part of India’s Largest Salon Chain An Exciting<br> Entrepreneurship Opportunity For You.</h4>
+    <button class="btone">Get in Touch</button>
+</div>
+<div class="nine2">
+    <img src="natural-1-1.webp " class="na1">
+</div>
+</div>
+
+<div class="ten">
+    <img src="man.webp" width="40%">
+    <div class="ten1">
+        <p>BEAUTY ACADEMY</p>
+        <h1> Hone Your Skills With<br>
+            Learning Opportunities<br>
+            From Naturals</h1>
+        <h4>Interested to Learn the Art of Make-Up?<br>
+            Join Naturals Beauty Academy – A Wave<br>
+            That Creates Artists in The Beauty Industry</h4>
+            <button class="btone">Get in Touch</button>
+        </div>
+</div>
+<div>
+    <img src="Haircut-Scissors-Open.J09-1.webp"  class="siser">
+   </div>
+<div class="eleven">
+    <p>CUSTOMER TESTIMONIALS<br>
+       </p>
+    <h1> See What Our Customers<br>
+        Has To Say About Us</h1>
+</div>
+
+
+
+<div class="twenty" >
+    
+    <img src="unnamed-2.webp" style="margin-left: 45%" width="50px">
+   <p style="margin-left: 10%;"><i class="fa-solid fa-chevron-left"  ></i>The facial and detan done by kanchana was mind blowing. Though i wanted to get
+        a head massage too, du to facial i was noble to take one...<i class="fa-solid fa-chevron-right"></i></p> 
+     <p style="margin-left: 24%;">Knowing my face, she exceptionally did an amazing facial along with a quick me sage</p>  
+       <p style="margin-left: 46%;">Nigamrutha V</p>
+       <p style="margin-left: 46%;" class="twentyp"> Business Person</p>
+   
+  
+</div>
+<div class="thirteen">
+    <h1>Check Out Our Instagram</h1>
+</div>
+
+<div class="fifteen">
+    <a href="https://www.instagram.com/naturalssalon/"><img src="insta.png" class="ins"></a>
+    <p>Naturalssalon</p>
+</div>
+<div class="nineteen1">
+    <div class="ninteen" >
+        <div class="video"><a href="https://www.instagram.com/p/CwcrYHvSn6t/"><img src="pc1.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/reel/CwXhdguB6p9/"><img src="pc2.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/p/CwWq3moSf6k/"><img src="pc3.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/p/CwSYRdiSSuS/"><img src="pc4.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/reel/CwP3ZIjhaAc/"><img src="pc5.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/p/CwMcrLySJIJ/"><img src="pc6.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/p/CwEpTl6yV3c/"><img src="pc7.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/reel/Cv87jy4uTEc/"><img src="pc8.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/p/Cv80C-gS_r0/"><img src="pc9.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/p/Cv7NDp7Sq2I/"><img src="pc10.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/p/Cv2DeHzy-_1/"><img src="pc11.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/reel/CvuU7VwMShI/"><img src="pc12.jpeg" width="80%"  height="135vh"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/reel/Cvlo-jBSGAy/"><img src="pc13.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/p/CvjLCbIyAYo/"><img src="pc14.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/p/CvjLCbIyAYo/"><img src="pc15.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/p/Cve4YmwyyFw/"><img src="pc16.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/reel/CvXlLQ_NFQl/"><img src="pc17.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/reel/CvXJP2BNdyU/"><img src="pc18.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/reel/CvUm8mQsfnV/"><img src="pc19.jpeg" width="80%"></a> </div>
+        <div class="video"><a href="https://www.instagram.com/reel/CvSCFdqOBLX/"><img src="pc20.jpeg" width="80%" height="140vh"></a> </div>
+        
+        
+    </div>
+    
+    <img src="leef.webp" width="25%" class="leef">
+</div>
+<div class="sisteen">
+    <button class="sisbt1">Load More</button>
+    <button  class="sisbt2"><i class="fa-brands fa-instagram"> </i>&nbsp;&nbsp;&nbsp;Follo on instagram</button>        
+</div>
+<div class="seventeen">
+    <div class="seventeen1">
+        <ul>
+            <li style="margin-left: 4%;">Quick Links</li>
+            <li  style="margin-left: 16%;">Our Services</li>
+            <li  style="margin-left: 7%;">Contact Us</li>
+            <li  style="margin-left: 24%;" >Get In Touch</li>
+        </ul>
+    </div>
+    <div class="seventeen2">
+        <ul>
+            <li>Home</li>
+            <li >About Us</li>
+            <li  >Contact Us</li>
+            <li>Franchise Opportunities</li>
+            <li>Privacy Policy</li>
+            <li>Blogs</li>
+        </ul>
+        <ul style="padding-bottom: 28px;">
+            <li>Hair Care</li>
+            <li>Skin Care</li>
+            <li>Body Care</li>
+            <li>Events</li>
+            <li>Locate us</li>
+            
+        </ul>
+        <ul>
+            <li>Groom India Salon & Spa Pvt. Lte</li>
+            <li> 123 & 124, 3rd Floor, Ispahani Centre,</li>
+            <li>Nungambakkam High Rd,</li>
+            <li>Thousand Lights, Chennai,</li>
+            <li>Tamil Nadu 600034</li>
+            <li>Store Locator</li>
+        </ul>
+        <ul  style="padding-bottom: 70px;">
+            <li>+91 90926 26262</li>
+            <li> care@naturals.in</li>
+            <li>
+                <div class="links">
+                   <a href="https://www.instagram.com/naturalssalon"> <i class="fa-brands fa-instagram"></i></a>
+                   <a href="https://www.facebook.com/NaturalsSalon"><i class="fa-brands fa-facebook"></i></a>
+                   <a href="https://www.linkedin.com/company/naturals-beauty-salon-india-p-ltd"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="https://twitter.com/naturals700"><i class="fa-brands fa-twitter"></i></a>
+                   <a href="https://www.youtube.com/channel/UCUedxgZ4Z8EvERtERBWDuXw"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </li>
+        </ul>
+        
+    </div>
+</div>
+<div class="eighteen">
+    <p>We use cookies to ensure that we give you the best experience on our website. 
+        If you continue to use this site we will assume that you are happy with it.</p>
+        <button class="ok">OK</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+<body>
+    
+</body>
+</html>
